@@ -30,7 +30,7 @@ if not weaviate_url or not weaviate_api_key or not google_api_key:
     sys.exit(1)
 
 # Configure LlamaIndex Settings
-Settings.llm = GoogleGenAI(model="models/gemini-1.5-flash-latest")
+Settings.llm = GoogleGenAI(model="models/gemini-1.5-flash")
 Settings.embed_model = GoogleGenAIEmbedding(model_name="text-embedding-004")
 print(f"Embedding model set to: {Settings.embed_model.model_name}")
 print(f"LLM set to: {Settings.llm.model_config}")
