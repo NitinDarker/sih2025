@@ -40,7 +40,7 @@ query_engine = None
 client = None # Hold the client in a global variable
 
 try:
-    index_name = "Questions"
+    index_name = "Curaj_test"
     
     # --- [FIXED] Create the client WITHOUT a 'with' statement ---
     client = weaviate.connect_to_weaviate_cloud(
@@ -114,4 +114,4 @@ def handle_query():
 if __name__ == "__main__":
     print("🌍 Starting Flask server on http://localhost:5000")
     # Use host='0.0.0.0' to make it accessible from other devices on your local network
-    app.run(host="0.0.0.0", port=5000, debug=True)
+    app.run(host="0.0.0.0", port=5000, debug=False)
